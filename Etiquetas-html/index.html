@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo adicional de etiquetas en html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="titulo-principal">
+        <h1>Etiquetas de HTML</h1>
+    </header>
+
+    <section class="contenido">
+        <div class="etiquetas">
+            <h2>Etiqueta "Details y Summary"</h2>
+            <p>Función: Crea elementos desplegables (como acordeones) sin necesidad de JavaScript.</p>
+            <p>Útiles para mostrar/ocultar contenido, como FAQs, mejorando la organización de información en la página.</p>
+            <div class="demostracion">
+                <details>
+                    <summary>Más información</summary>
+                    <p>Este contenido está oculto hasta que se hace click.</p>
+                </details>
+            </div>
+        </div>
+
+        <div class="etiquetas">
+            <h2>Etiqueta "abbr"</h2>
+            <p>Función: Proveer una abreviatura o acrónimo con su definición al pasar el mouse.</p>
+            <p>Aclara siglas o términos técnicos al mostrar su significado al pasar el cursor, ideal para textos educativos.</p>
+            <div class="demostracion">
+                <p>La <abbr title="Organización Mundial de la Salud">OMS</abbr> es una agencia de la ONU.</p>
+            </div>
+        </div>
+
+        <div class="etiquetas">
+            <h2>Etiqueta "datalist"</h2>
+            <p>Función: Proveer una lista de opciones sugeridas para un campo de entrada.</p>
+            <p>Ofrece sugerencias al escribir en un campo, perfecto para búsquedas o formularios interactivos.</p>
+            <div class="demostracion">
+                <label for="pais">Selecciona un país:</label>
+                <input list="paises" id="pais" name="pais">
+                <datalist id="paises">
+                    <option value="Argentina">
+                    <option value="Brasil">
+                    <option value="Chile">
+                    <option value="Uruguay">
+                </datalist>
+            </div>
+        </div>
+
+        <div class="etiquetas">
+            <h2>Etiqueta "progress"</h2>
+            <p>Función: Indicar el progreso de una tarea (como una barra de carga).</p>
+            <p>Muestra el avance de tareas como cargas o descargas, ayudando al usuario a visualizar el progreso.</p>
+            <div class="demostracion">
+                <progress value="50" max="100"></progress>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
